@@ -1,6 +1,9 @@
 import pandas as pd
 
-df = pd.read_csv("..\data\season-2425.csv",delimiter=";")
-df["Date"] = pd.to_datetime(df["Date"],dayfirst=True)
-print(df.head())
-print(df.dtypes)
+# Loads a CSV file and ensures proper formatting: 
+#    - Converts 'Date' column to datetime 
+#    - Uses ';' as delimiter
+def check_data(filepath):
+    df = pd.read_csv(filepath,delimiter=";")
+    df["Date"] = pd.to_datetime(df["Date"],dayfirst=True)
+    return df
