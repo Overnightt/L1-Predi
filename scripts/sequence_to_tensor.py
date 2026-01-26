@@ -1,7 +1,5 @@
 import torch
 import pandas as pd
-from data_check import check_data
-from build_sequences import build_sequence
 
 
 #A list of all teams
