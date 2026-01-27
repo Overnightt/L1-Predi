@@ -3,7 +3,7 @@ import pandas as pd
 from build_sequences import build_sequence
 from sequence_to_tensor import sequence_to_tensor
 
-#Builds a training sample for a single match.
+#Builds a training sample for a single match. Skips matches that don't have enough prior history.
 def build_sample(matches: pd.DataFrame,row : int,n: int):
     match= matches.iloc[row]
     date= match["Date"]
