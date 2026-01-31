@@ -24,3 +24,4 @@ for epoch in range(epochs):
     preds = torch.argmax(outputs, dim=1)
     accuracy = (preds == Y.squeeze()).float().mean().item()
     print(f"Epoch: {epoch}, Loss: {loss.item()}, Accuracy: {accuracy}")
+torch.save(model.state_dict(),"L1_predictor_v1.pth")
