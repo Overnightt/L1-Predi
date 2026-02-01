@@ -12,7 +12,6 @@ def build_sample(matches: pd.DataFrame,row : int,n: int):
     seqH = build_sequence(HT,date,matches,n)
     seqA = build_sequence(AT,date,matches,n)
     if len(seqH) <n or len(seqA)<n:
-        print("the match is to early to have a meaningfull sample")
         return None
     TH = sequence_to_tensor(seqH)
     TA = sequence_to_tensor(seqA)
@@ -27,7 +26,7 @@ def build_prediction_sample(matches: pd.DataFrame, home_team: str, away_team: st
     seqH = build_sequence(home_team, current_date, matches, n)
     seqA = build_sequence(away_team, current_date, matches, n)
     if len(seqH) < n or len(seqA) < n:
-        print("the match is to early to have a meaningfull sample")
+        return None
     TH = sequence_to_tensor(seqH)
     TA = sequence_to_tensor(seqA)
     TX = torch.cat((TH, TA), dim=1)

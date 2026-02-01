@@ -7,7 +7,7 @@ from dataset_builder import build_dataset
 
 #This is where we train the model
 
-n_matches=10
+n_matches=15
 n_features=40
 model = L1_Predictor(n_matches,n_features)
 loss_function = nn.CrossEntropyLoss()
