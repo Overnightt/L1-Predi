@@ -5,6 +5,8 @@ from data_check import check_data
 from model import L1_Predictor
 from dataset_builder import build_dataset
 
+#This is where we train the model
+
 n_matches=10
 n_features=40
 model = L1_Predictor(n_matches,n_features)

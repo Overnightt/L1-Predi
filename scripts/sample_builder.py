@@ -20,3 +20,15 @@ def build_sample(matches: pd.DataFrame,row : int,n: int):
     outcome_map = {"H":0,"D":1,"A":2}
     y= torch.tensor([outcome_map[match["FTR"]]],dtype=torch.long)
     return TX,y
+
+#Buils a sample but for prediction
+def build_prediction_sample(matches: pd.DataFrame, home_team: str, away_team: str, n: int):
+    current_date = matches["Date"].max()
+    seqH = build_sequence(home_team, current_date, matches, n)
+    seqA = build_sequence(away_team, current_date, matches, n)
+    if len(seqH) < n or len(seqA) < n:
+        print("the match is to early to have a meaningfull sample")
+    TH = sequence_to_tensor(seqH)
+    TA = sequence_to_tensor(seqA)
+    TX = torch.cat((TH, TA), dim=1)
+    return TX
