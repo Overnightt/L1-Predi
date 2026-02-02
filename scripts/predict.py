@@ -5,13 +5,13 @@ from model import L1_Predictor
 from data_check import check_data
 from sample_builder import build_prediction_sample
 
-MODEL_PATH = "L1_predictor_v1.pth"
+MODEL_PATH = "L1_predictor_v2_9.pth"
 DATA_PATH  = "../data/season-2425.csv"  
-N_MATCHES  = 15
+N_MATCHES  = 9
 N_FEATURES = 40
 
-HOME_TEAM = "Paris SG"
-AWAY_TEAM = "Strasbourg"
+HOME_TEAM = "Strasbourg"
+AWAY_TEAM = "Paris SG"
 
 matches = check_data(DATA_PATH)
 model = L1_Predictor(N_MATCHES, N_FEATURES)

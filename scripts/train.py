@@ -7,23 +7,47 @@ from dataset_builder import build_dataset
 
 #This is where we train the model
 
-n_matches=15
+n_matches=9
 n_features=40
 model = L1_Predictor(n_matches,n_features)
 loss_function = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(),lr=0.001)
 matches=check_data("../data/season-2425.csv")
-X, Y = build_dataset(matches,n_matches)
+split_idx = int(len(matches) * 0.8)
+train_matches = matches.iloc[:split_idx]
+val_matches   = matches.iloc[split_idx:]
+X_Train, Y_Train = build_dataset(train_matches,n_matches)
+X_val, Y_val = build_dataset(val_matches,n_matches)
+print(len(Y_val))
+previous_acc = float('-inf')
+previous_loss = float("inf")
 
-epochs=250
+epochs=40
 
 for epoch in range(epochs):
+    model.train()
     optimizer.zero_grad()
-    outputs = model(X)
-    loss = loss_function(outputs, Y.squeeze())
+    outputs = model(X_Train)
+    loss = loss_function(outputs, Y_Train.squeeze())
     loss.backward()
     optimizer.step()
-    preds = torch.argmax(outputs, dim=1)
-    accuracy = (preds == Y.squeeze()).float().mean().item()
-    print(f"Epoch: {epoch}, Loss: {loss.item()}, Accuracy: {accuracy}")
-torch.save(model.state_dict(),"L1_predictor_v1.pth")
+
+    model.eval()
+    with torch.no_grad():
+        val_outputs = model(X_val)
+        val_loss = loss_function(val_outputs, Y_val.squeeze())
+        val_preds = torch.argmax(val_outputs, dim=1)
+        val_acc = (val_preds == Y_val.squeeze()).float().mean().item()
+        if previous_acc<val_acc  or (val_acc == previous_acc and val_loss < previous_loss):
+            print(f"i save the model with acc {val_acc}")
+            torch.save(model.state_dict(),"L1_predictor_v3_9.pth")
+            previous_acc = val_acc
+            previous_loss = val_loss
+    print(
+        f"Epoch {epoch} | "
+        f"Train loss: {loss.item():.3f} | "
+        f"Val loss: {val_loss.item():.3f} | "
+        f"Val acc: {val_acc:.3f}"
+    )
+
+
