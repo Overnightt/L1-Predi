@@ -8,9 +8,9 @@ class L1_Predictor(nn.Module):
     def __init__(self,n_matches: int,n_features: int):
         super().__init__()
         input_size = n_matches*n_features
-        self.fully_connected_layer1 = nn.Linear(input_size,32)
+        self.fully_connected_layer1 = nn.Linear(input_size,16)
         self.relu = nn.ReLU()
-        self.fully_connected_layer2 = nn.Linear(32,3)
+        self.fully_connected_layer2 = nn.Linear(16,3)
 
     def forward(self,x):
         x = x.view(x.size(0),-1)

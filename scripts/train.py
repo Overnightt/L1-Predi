@@ -7,7 +7,7 @@ from dataset_builder import build_dataset
 
 #This is where we train the model
 
-n_matches=11
+n_matches=26
 n_features=40
 model = L1_Predictor(n_matches,n_features)
 loss_function = nn.CrossEntropyLoss()
@@ -21,8 +21,7 @@ X_val, Y_val = build_dataset(val_matches,n_matches)
 print(len(Y_val)) #i need to delete this later
 previous_acc = float('-inf')
 previous_loss = float("inf")
-
-epochs=60
+epochs=100
 
 for epoch in range(epochs):
     model.train()
@@ -40,7 +39,7 @@ for epoch in range(epochs):
         val_acc = (val_preds == Y_val.squeeze()).float().mean().item()
         if previous_acc<val_acc  or (val_acc == previous_acc and val_loss < previous_loss):
             print(f"i save the model with acc {val_acc}")
-            torch.save(model.state_dict(),"L1_predictor_v4.pth")
+            torch.save(model.state_dict(),"L1_predictor_v9_26.pth")
             previous_acc = val_acc
             previous_loss = val_loss
     print(

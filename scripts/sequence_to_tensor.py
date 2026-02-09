@@ -3,7 +3,7 @@ import pandas as pd
 
 
 #A list of all teams
-all_team_names = ['Amiens','Guingamp','Caen','Le Havre', 'Paris SG', 'Brest', 'Marseille', 'Reims', 'Lille', 'Monaco', 'St Etienne', 'Auxerre', 'Nice', 'Angers', 'Lens', 'Montpellier', 'Strasbourg', 'Toulouse', 'Rennes', 'Lyon','Nantes','Paris FC', 'Metz','Lorient','Clermont','Troyes','Ajaccio','Dijon','Bordeaux','Nimes']
+all_team_names = ['Sochaux','Valenciennes','Nancy','Grenoble','Evian Thonon Gaillard','Ajaccio GFCO','Arles','Le Mans','Bastia','Boulogne','Amiens','Guingamp','Caen','Le Havre', 'Paris SG', 'Brest', 'Marseille', 'Reims', 'Lille', 'Monaco', 'St Etienne', 'Auxerre', 'Nice', 'Angers', 'Lens', 'Montpellier', 'Strasbourg', 'Toulouse', 'Rennes', 'Lyon','Nantes','Paris FC', 'Metz','Lorient','Clermont','Troyes','Ajaccio','Dijon','Bordeaux','Nimes']
 
 # Converts a football match sequence DataFrame into a PyTorch tensor suitable for ML models:
 #   -Drops the 'Date' and 'Referee" column as they are not used in modeling.
