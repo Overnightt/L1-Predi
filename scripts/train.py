@@ -7,18 +7,17 @@ from dataset_builder import build_dataset
 
 #This is where we train the model
 
-n_matches=26
+n_matches=10
 n_features=40
 model = L1_Predictor(n_matches,n_features)
 loss_function = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(),lr=0.001)
-matches=check_data("../data/season-2425.csv")
+matches=check_data("../data/seasons-17-26.csv")
 split_idx = int(len(matches) * 0.8)
 train_matches = matches.iloc[:split_idx]
 val_matches   = matches.iloc[split_idx:]
 X_Train, Y_Train = build_dataset(train_matches,n_matches)
 X_val, Y_val = build_dataset(val_matches,n_matches)
-print(len(Y_val)) #i need to delete this later
 previous_acc = float('-inf')
 previous_loss = float("inf")
 epochs=100
@@ -39,7 +38,7 @@ for epoch in range(epochs):
         val_acc = (val_preds == Y_val.squeeze()).float().mean().item()
         if previous_acc<val_acc  or (val_acc == previous_acc and val_loss < previous_loss):
             print(f"i save the model with acc {val_acc}")
-            torch.save(model.state_dict(),"L1_predictor_v9_26.pth")
+            torch.save(model.state_dict(),"../Model/L1_predictor_vX.pth")
             previous_acc = val_acc
             previous_loss = val_loss
     print(
