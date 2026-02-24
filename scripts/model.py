@@ -15,8 +15,6 @@ class L1_Predictor(nn.Module):
         )
         self.fc = nn.Linear(hidden_size,3)
     def forward(self,x):
-        x = x.view(x.size(0),-1)
-        x = self.fully_connected_layer1(x)
-        x = self.relu(x)
-        x= self.fully_connected_layer2(x)
-        return x
+        lstm_out, _ = self.lstm(x)
+        last_out = lstm_out[:,-1,:]
+        return self.fc(last_out)
