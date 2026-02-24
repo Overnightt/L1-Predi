@@ -5,13 +5,15 @@ import torch.nn as nn
 # Input: a tensor of shape [batch_size, n_matches, n_features] (past match sequences for home & away teams)
 # Output: a tensor of shape [batch_size, 3] with raw scores for each class (Home win, Draw, Away win)
 class L1_Predictor(nn.Module):
-    def __init__(self,n_matches: int,n_features: int):
+    def __init__(self,n_features: int,hidden_size: int = 16, num_layers = 2):
         super().__init__()
-        input_size = n_matches*n_features
-        self.fully_connected_layer1 = nn.Linear(input_size,16)
-        self.relu = nn.ReLU()
-        self.fully_connected_layer2 = nn.Linear(16,3)
-
+        self.lstm= nn.LSTM(
+            input_size = n_features,
+            hidden_size = hidden_size,
+            num_layers = num_layers
+            batch_first = True   
+        )
+        self.fc = nn.Linear(hidden_size,3)
     def forward(self,x):
         x = x.view(x.size(0),-1)
         x = self.fully_connected_layer1(x)
