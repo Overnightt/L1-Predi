@@ -10,7 +10,7 @@ class L1_Predictor(nn.Module):
         self.lstm= nn.LSTM(
             input_size = n_features,
             hidden_size = hidden_size,
-            num_layers = num_layers
+            num_layers = num_layers,
             batch_first = True   
         )
         self.fc = nn.Linear(hidden_size,3)

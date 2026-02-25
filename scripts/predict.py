@@ -16,7 +16,7 @@ HOME_TEAM = input("Home Team:")
 AWAY_TEAM = input("Away Team:")
 
 matches = check_data(DATA_PATH)
-model = L1_Predictor(N_MATCHES, N_FEATURES)
+model = L1_Predictor(N_FEATURES)
 model.load_state_dict(torch.load(MODEL_PATH, weights_only=True))
 model.eval()
 X = build_prediction_sample(matches, HOME_TEAM, AWAY_TEAM, N_MATCHES)

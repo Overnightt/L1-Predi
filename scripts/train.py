@@ -7,9 +7,9 @@ from dataset_builder import build_dataset
 
 #This is where we train the model
 
-n_matches=10
+n_matches=26
 n_features=40
-model = L1_Predictor(n_matches,n_features)
+model = L1_Predictor(n_features)
 loss_function = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(),lr=0.001)
 matches=check_data("../data/seasons-17-26.csv")
@@ -38,7 +38,7 @@ for epoch in range(epochs):
         val_acc = (val_preds == Y_val.squeeze()).float().mean().item()
         if previous_acc<val_acc  or (val_acc == previous_acc and val_loss < previous_loss):
             print(f"i save the model with acc {val_acc}")
-            torch.save(model.state_dict(),"../Model/L1_predictor_vX.pth")
+            torch.save(model.state_dict(),"../Model/L1_predictor_LSTM_v1_26.pth")
             previous_acc = val_acc
             previous_loss = val_loss
     print(
