@@ -11,7 +11,7 @@ n_matches=26
 n_features=40
 model = L1_Predictor(n_features)
 loss_function = nn.CrossEntropyLoss()
-optimizer = optim.Adam(model.parameters(),lr=0.001)
+optimizer = optim.Adam(model.parameters(),lr=0.00077)
 matches=check_data("../data/seasons-17-26.csv")
 split_idx = int(len(matches) * 0.8)
 train_matches = matches.iloc[:split_idx]
@@ -20,7 +20,7 @@ X_Train, Y_Train = build_dataset(train_matches,n_matches)
 X_val, Y_val = build_dataset(val_matches,n_matches)
 previous_acc = float('-inf')
 previous_loss = float("inf")
-epochs=100
+epochs=150
 
 for epoch in range(epochs):
     model.train()
@@ -38,7 +38,7 @@ for epoch in range(epochs):
         val_acc = (val_preds == Y_val.squeeze()).float().mean().item()
         if previous_acc<val_acc  or (val_acc == previous_acc and val_loss < previous_loss):
             print(f"i save the model with acc {val_acc}")
-            torch.save(model.state_dict(),"../Model/L1_predictor_LSTM_v1_26.pth")
+            torch.save(model.state_dict(),"../Model/L1_predictor_LSTM_v4_26.pth")
             previous_acc = val_acc
             previous_loss = val_loss
     print(

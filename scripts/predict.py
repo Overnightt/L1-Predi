@@ -7,7 +7,7 @@ from sample_builder import build_prediction_sample
 
 #this is where you do your prediction
 
-MODEL_PATH = "../Model/L1_predictor_v8_26.pth"
+MODEL_PATH = "../Model/L1_predictor_LSTM_v3_26.pth"
 DATA_PATH  = "../data/seasons-17-26.csv"  
 N_MATCHES  = 26
 N_FEATURES = 40
