@@ -5,7 +5,9 @@ from model import L1_Predictor
 from data_check import check_data
 from sample_builder import build_prediction_sample
 
-MODEL_PATH = "../Model/L1_predictor_v8_26.pth"
+#this is where you do your prediction
+
+MODEL_PATH = "../Model/L1_predictor_LSTM_v3_26.pth"
 DATA_PATH  = "../data/seasons-17-26.csv"  
 N_MATCHES  = 26
 N_FEATURES = 40
@@ -14,7 +16,7 @@ HOME_TEAM = input("Home Team:")
 AWAY_TEAM = input("Away Team:")
 
 matches = check_data(DATA_PATH)
-model = L1_Predictor(N_MATCHES, N_FEATURES)
+model = L1_Predictor(N_FEATURES)
 model.load_state_dict(torch.load(MODEL_PATH, weights_only=True))
 model.eval()
 X = build_prediction_sample(matches, HOME_TEAM, AWAY_TEAM, N_MATCHES)
