@@ -8,10 +8,10 @@ A neural network-based predictor for Ligue 1 football match outcomes. This proje
 
 ### How It Works
 
-L1-Predi uses a simple but effective fully connected neural network architecture:
+L1-Predi uses a Long Short-Term Memory (LSTM) neural network architecture, which is better suited for sequential data like match history:
 
-- **Input Layer**: Takes sequences of past match statistics for both home and away teams
-- **Hidden Layer**: 16 neurons with ReLU activation
+- **Input Layer**: Takes sequences of 26 past match statistics for both home and away teams
+- **LSTM Layer**: 16 hidden units that process matches chronologically, retaining relevant information over time
 - **Output Layer**: 3 neurons representing probabilities for each outcome (Home win, Draw, Away win)
 
 The model was built using PyTorch and trained on **2,960 matches** from the 2017-2026 seasons using data from [DataHub's French Ligue 1 dataset](https://datahub.io/core/french-ligue-1).
@@ -23,7 +23,7 @@ The model was built using PyTorch and trained on **2,960 matches** from the 2017
 
 ### Key Metrics
 
-- **Validation Accuracy**: 52.1%
+- **Validation Accuracy**: 55.6%
 - **Top Prediction Accuracy (Week 20)**: 62%
 
 ### Understanding the Numbers
