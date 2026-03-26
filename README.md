@@ -28,7 +28,7 @@ The model was built using PyTorch and trained on **2,960 matches** from the 2017
 
 ### Understanding the Numbers
 
-The model achieves 52.1% accuracy on validation data, which might seem modest at first glance. However, this is intentional. The model is designed to make **conservative predictions**, avoiding overconfident probability assignments to any single outcome.
+The model achieves 55.6% accuracy on validation data, which might seem modest at first glance. However, this is intentional. The model is designed to make **conservative predictions**, avoiding overconfident probability assignments to any single outcome.
 
 **Important nuance**: When looking at the model's **most confident prediction** (the outcome with the highest probability), the accuracy is significantly higher. For example, during week 20 of the season, if you selected the outcome that the AI assigned the highest probability to, you would be correct **62% of the time**.
 
