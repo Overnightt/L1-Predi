@@ -24,7 +24,7 @@ The model was built using PyTorch and trained on **2,960 matches** from the 2017
 ### Key Metrics
 
 - **Validation Accuracy**: 55.6%
-- **Average Prediction Accuracy **: 62%
+- **Average Prediction Accuracy**: 62%
 
 ### Understanding the Numbers
 
