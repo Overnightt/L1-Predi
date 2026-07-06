@@ -38,7 +38,7 @@ for epoch in range(epochs):
         val_acc = (val_preds == Y_val.squeeze()).float().mean().item()
         if previous_acc<val_acc  or (val_acc == previous_acc and val_loss < previous_loss):
             print(f"i save the model with acc {val_acc}")
-            torch.save(model.state_dict(),"../Model/L1_predictor_LSTM_v4_26.pth")
+            torch.save(model.state_dict(),"../Model/YOUR_MODEL_NAME.pth")
             previous_acc = val_acc
             previous_loss = val_loss
     print(

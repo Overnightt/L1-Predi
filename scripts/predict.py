@@ -7,7 +7,7 @@ from sample_builder import build_prediction_sample
 
 #This is where you do your prediction
 
-Model = "../Model/L1_predictor_LSTM_v3_26.pth"
+Model = "../Model/YOUR_MODEL_NAME.pth"
 N_MATCHES  = 26
 N_FEATURES = 40
 
