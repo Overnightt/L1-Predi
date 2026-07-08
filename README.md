@@ -1,3 +1,81 @@
+# L1-Predi 
+
+> **Work in progress**: this project is currently undergoing major changes (multi-league support, new features, architecture updates) and is **not usable in its current state**. Expect broken scripts and outdated instructions until this notice is removed.
+
+A neural network-based predictor for Ligue 1 football match outcomes. This project uses historical match data to predict the probability of home wins, draws, and away wins.
+
+---
+
+## About the Model
+
+### How It Works
+
+L1-Predi uses a Long Short-Term Memory (LSTM) neural network architecture, which is better suited for sequential data like match history:
+
+- **Input Layer**: Takes sequences of 26 past match statistics for both home and away teams
+- **LSTM Layer**: 16 hidden units that process matches chronologically, retaining relevant information over time
+- **Output Layer**: 3 neurons representing probabilities for each outcome (Home win, Draw, Away win)
+
+The model was built using PyTorch and trained on **2,960 matches** from the 2017-2026 seasons using data from [DataHub's French Ligue 1 dataset](https://datahub.io/core/french-ligue-1).
+
+
+---
+
+## Model Performance & Accuracy
+
+### Key Metrics
+
+- **Validation Accuracy**: 55.6%
+- **Average Prediction Accuracy**: 62%
+
+### Understanding the Numbers
+
+The model achieves 55.6% accuracy on validation data, which might seem modest at first glance. However, this is intentional. The model is designed to make **conservative predictions**, avoiding overconfident probability assignments to any single outcome.
+
+**Important nuance**: When looking at the model's **most confident prediction** (the outcome with the highest probability), the accuracy is significantly higher. For example, during week 20 of the season, if you selected the outcome that the AI assigned the highest probability to, you would be correct **62% of the time**.
+
+---
+
+##  How to Use the Model
+
+### Prerequisites
+
+Make sure you have the following dependencies installed:
+
+- Python 3.x
+- PyTorch
+- Pandas
+- NumPy
+
+### Running Predictions
+
+1. **Navigate to the scripts directory**:
+   ```bash
+   cd ./scripts/
+   ```
+
+2. **Run the prediction script**:
+   ```bash
+   python ./predict.py
+   ```
+
+3. **Enter team names** when prompted:
+   - You'll be asked to input the home team name
+   - Then the away team name
+   
+   **Important**: Team names must be written **exactly** as they appear in the CSV data file. If you encounter an error, double-check your spelling and capitalization against the dataset.
+
+### Example Usage
+
+```
+Home Team:Paris SG
+Away Team:Marseille
+Prediction for Paris SG vs Marseille
+Home win: 50.35%
+Draw    : 24.56%
+Away win: 25.10%
+```
+
 ---
 
 ## About This Project
