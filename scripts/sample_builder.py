@@ -2,6 +2,7 @@ import torch
 import pandas as pd
 from build_sequences import build_sequence
 from sequence_to_tensor import sequence_to_tensor
+from head_to_head import h2h_score
 
 #Builds a training sample for a single match. Skips matches that don't have enough prior history.
 def build_sample(matches: pd.DataFrame,row : int,n: int):
@@ -11,23 +12,27 @@ def build_sample(matches: pd.DataFrame,row : int,n: int):
     AT= match["AwayTeam"]
     seqH = build_sequence(HT,date,matches,n)
     seqA = build_sequence(AT,date,matches,n)
+    H2H = h2h_score(HT,AT,date,matches)
     if len(seqH) <n or len(seqA)<n:
         return None
     TH = sequence_to_tensor(seqH)
     TA = sequence_to_tensor(seqA)
     TX = torch.cat((TH,TA),dim=1)
+    TH2H = torch.tensor([H2H]) 
     outcome_map = {"H":0,"D":1,"A":2}
-    y= torch.tensor([outcome_map[match["FTR"]]],dtype=torch.long)
-    return TX,y
+    y = torch.tensor([outcome_map[match["FTR"]]],dtype=torch.long)
+    return TX,TH2H,y
 
 #Buils a sample but for prediction
 def build_prediction_sample(matches: pd.DataFrame, home_team: str, away_team: str, n: int):
     current_date = matches["Date"].max()
     seqH = build_sequence(home_team, current_date, matches, n)
     seqA = build_sequence(away_team, current_date, matches, n)
+    H2H = h2h_score(home_team,away_team,current_date,matches)
     if len(seqH) < n or len(seqA) < n:
         return None
     TH = sequence_to_tensor(seqH)
     TA = sequence_to_tensor(seqA)
     TX = torch.cat((TH, TA), dim=1)
-    return TX
+    TH2H = torch.tensor([H2H]) 
+    return TX,TH2H

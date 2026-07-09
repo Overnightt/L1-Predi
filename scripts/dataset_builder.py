@@ -2,17 +2,20 @@ import torch
 import pandas as pd
 from sample_builder import build_sample
 
-#Builds the full dataset from the matches DataFrame.For each match, it constructs the input tensor (TX) 
+#Builds the full dataset from the matches DataFrame.For each match, it constructs the input tensor (TX,TH2H) 
 #and target (y) using `build_sample`.Skips matches that don't have enough prior history.
 def build_dataset(matches: pd.DataFrame, n: int):
     TX_list = []
+    TH2H_list = []
     y_list  = []
     for i in range(len(matches)):
         sample = build_sample(matches,i,n)
         if sample is not None:
-            TX , y = sample
+            TX ,TH2H , y = sample
             TX_list.append(TX)
+            TH2H_list.append(TH2H)
             y_list.append(y)
     X = torch.stack(TX_list)
+    H = torch.stack(TH2H_list)
     Y = torch.stack(y_list)
-    return X, Y
+    return X, H, Y

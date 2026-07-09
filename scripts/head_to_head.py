@@ -1,3 +1,5 @@
+import pandas as pd
+
 #Compute a head-to-head (H2H) score between two teams for a given match date.
 #Looks at all past confrontations between Hteam and Ateam (regardless of who was hosting), 
 #and returns a score in [-1, 1]:
