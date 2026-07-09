@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import pandas as pd
-from model import L1_Predictor
+from model import FC_Predictor
 from data_check import check_data
 from sample_builder import build_prediction_sample
 
@@ -15,7 +15,7 @@ HOME_TEAM = input("Home Team:")
 AWAY_TEAM = input("Away Team:")
 
 matches = check_data("../data/seasons-17-26.csv")
-model = L1_Predictor(N_FEATURES)
+model = FC_Predictor(N_FEATURES)
 model.load_state_dict(torch.load(Model , weights_only=True))
 model.eval()
 X = build_prediction_sample(matches, HOME_TEAM, AWAY_TEAM, N_MATCHES)
