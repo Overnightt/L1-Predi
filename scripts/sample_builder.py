@@ -27,7 +27,7 @@ def build_sample(matches: pd.DataFrame,row : int,n: int, squad_values_age: pd.Da
     TH = sequence_to_tensor(seqH)
     TA = sequence_to_tensor(seqA)
     TX = torch.cat((TH,TA),dim=1)
-    T_static_features = torch.tensor([H2H, HTA, HTV, ATA, ATV])
+    T_static_features = torch.tensor([H2H, HTA, HTV, ATA, ATV], dtype=torch.float32)
     outcome_map = {"H":0,"D":1,"A":2}
     y = torch.tensor([outcome_map[match["FTR"]]],dtype=torch.long)
     return TX,T_static_features,y

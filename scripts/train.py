@@ -9,13 +9,13 @@ from dataset_builder import build_dataset
 
 n_matches=26
 n_features=40
-static_size=1
+static_size=5
 model = FC_Predictor(n_features,static_size)
 
 loss_function = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(),lr=0.001) # MODIFY learning rate here
 
-matches=check_data("../data/seasons-17-26.csv")
+matches=check_data("../data/seasons-19-26.csv")
 
 split_idx = int(len(matches) * 0.8)
 train_matches = matches.iloc[:split_idx]
@@ -27,7 +27,7 @@ X_val, H_val ,Y_val = build_dataset(val_matches,n_matches)
 previous_acc = float('-inf')
 previous_loss = float("inf")
 
-epochs=50 # MODIFY epochs here
+epochs=150 # MODIFY epochs here
 
 # The training loop
 for epoch in range(epochs):

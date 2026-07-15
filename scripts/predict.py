@@ -14,7 +14,7 @@ N_FEATURES = 40
 HOME_TEAM = input("Home Team:")
 AWAY_TEAM = input("Away Team:")
 
-matches = check_data("../data/seasons-17-26.csv")
+matches = check_data("../data/seasons-19-26.csv")
 model = FC_Predictor(N_FEATURES)
 model.load_state_dict(torch.load(Model , weights_only=True))
 model.eval()
