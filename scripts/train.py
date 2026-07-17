@@ -4,6 +4,7 @@ import torch.optim as optim
 from data_check import check_data
 from model import FC_Predictor
 from dataset_builder import build_dataset
+from normalisation_stats import norm_stats
 
 #This is where we train the model
 
@@ -13,21 +14,23 @@ static_size=5
 model = FC_Predictor(n_features,static_size)
 
 loss_function = nn.CrossEntropyLoss()
-optimizer = optim.Adam(model.parameters(),lr=0.001) # MODIFY learning rate here
+optimizer = optim.Adam(model.parameters(),lr=0.0005) # MODIFY learning rate here
 
 matches=check_data("../data/seasons-19-26.csv")
+squad_values = check_data("../data/teams-19-26.csv", date_column="SeasonStart")
 
 split_idx = int(len(matches) * 0.8)
 train_matches = matches.iloc[:split_idx]
 val_matches   = matches.iloc[split_idx:]
 
-X_Train, H_Train, Y_Train = build_dataset(train_matches,n_matches)
-X_val, H_val ,Y_val = build_dataset(val_matches,n_matches)
+stats = norm_stats(train_matches, squad_values)
+X_Train, H_Train, Y_Train = build_dataset(train_matches,n_matches,stats)
+X_val, H_val ,Y_val = build_dataset(val_matches,n_matches,stats)
 
 previous_acc = float('-inf')
 previous_loss = float("inf")
 
-epochs=150 # MODIFY epochs here
+epochs=450 # MODIFY epochs here
 
 # The training loop
 for epoch in range(epochs):

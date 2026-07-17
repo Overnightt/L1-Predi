@@ -6,7 +6,7 @@ from head_to_head import h2h_score
 from get_squad_stats import get_squad_stats
 
 #Builds a training sample for a single match. Skips matches that don't have enough prior history.
-def build_sample(matches: pd.DataFrame,row : int,n: int, squad_values_age: pd.DataFrame):
+def build_sample(matches: pd.DataFrame,row : int,n: int, squad_values_age: pd.DataFrame, stats: dict):
     match= matches.iloc[row]
     date= match["Date"]
     HT= match["HomeTeam"]
@@ -27,13 +27,17 @@ def build_sample(matches: pd.DataFrame,row : int,n: int, squad_values_age: pd.Da
     TH = sequence_to_tensor(seqH)
     TA = sequence_to_tensor(seqA)
     TX = torch.cat((TH,TA),dim=1)
-    T_static_features = torch.tensor([H2H, HTA, HTV, ATA, ATV], dtype=torch.float32)
+    HTA_norm = (HTA - stats["age_mean"]) / stats["age_std"]
+    HTV_norm = (HTV - stats["value_mean"]) / stats["value_std"]
+    ATA_norm = (ATA - stats["age_mean"]) / stats["age_std"]
+    ATV_norm = (ATV - stats["value_mean"]) / stats["value_std"]
+    T_static_features = torch.tensor([H2H, HTA_norm, HTV_norm, ATA_norm, ATV_norm], dtype=torch.float32)
     outcome_map = {"H":0,"D":1,"A":2}
     y = torch.tensor([outcome_map[match["FTR"]]],dtype=torch.long)
     return TX,T_static_features,y
 
 #Buils a sample but for prediction
-def build_prediction_sample(matches: pd.DataFrame, home_team: str, away_team: str, n: int, squad_values_age: pd.DataFrame):
+def build_prediction_sample(matches: pd.DataFrame, home_team: str, away_team: str, n: int, squad_values_age: pd.DataFrame, stats: dict):
     current_date = matches["Date"].max()
     
     seqH = build_sequence(home_team, current_date, matches, n)
@@ -51,5 +55,9 @@ def build_prediction_sample(matches: pd.DataFrame, home_team: str, away_team: st
     TH = sequence_to_tensor(seqH)
     TA = sequence_to_tensor(seqA)
     TX = torch.cat((TH, TA), dim=1)
-    T_static_features = torch.tensor([H2H, HTA, HTV, ATA, ATV])
+    HTA_norm = (HTA - stats["age_mean"]) / stats["age_std"]
+    HTV_norm = (HTV - stats["value_mean"]) / stats["value_std"]
+    ATA_norm = (ATA - stats["age_mean"]) / stats["age_std"]
+    ATV_norm = (ATV - stats["value_mean"]) / stats["value_std"]
+    T_static_features = torch.tensor([H2H, HTA_norm, HTV_norm, ATA_norm, ATV_norm], dtype=torch.float32)
     return TX, T_static_features
