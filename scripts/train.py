@@ -16,7 +16,7 @@ static_size=5
 model = FC_Predictor(n_features,static_size)
 
 loss_function = nn.CrossEntropyLoss()
-optimizer = optim.Adam(model.parameters(),lr=0.002) # MODIFY learning rate here
+optimizer = optim.Adam(model.parameters(),lr=0.007) # MODIFY learning rate here
 
 matches=check_data("../data/seasons-19-26.csv")
 squad_values = check_data("../data/teams-19-26.csv", date_column="SeasonStart")
@@ -32,7 +32,7 @@ X_val, H_val ,Y_val = build_dataset(val_matches,n_matches,stats)
 previous_acc = float('-inf')
 previous_loss = float("inf")
 
-epochs=100 # MODIFY epochs here
+epochs=150 # MODIFY epochs here
 
 # The training loop
 for epoch in range(epochs):
