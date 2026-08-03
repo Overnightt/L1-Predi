@@ -6,7 +6,7 @@ from model import FC_Predictor
 from dataset_builder import build_dataset
 from normalisation_stats import norm_stats
 
-torch.manual_seed(2)
+torch.manual_seed(42)
 
 #This is where we train the model
 

@@ -1,4 +1,82 @@
 Team;SeasonStart;League;AvgAge;SquadValue
+Juventus;01/08/2019;Serie A;27.2;661880000
+Inter;01/08/2019;Serie A;27.3;606050000
+Napoli;01/08/2019;Serie A;27.3;548280000
+Milan;01/08/2019;Serie A;25.7;404330000
+Roma;01/08/2019;Serie A;26.1;392730000
+Lazio;01/08/2019;Serie A;26.6;303880000
+Fiorentina;01/08/2019;Serie A;25.2;302230000
+Atalanta;01/08/2019;Serie A;25.4;291430000
+Sassuolo;01/08/2019;Serie A;24.8;167980000
+Cagliari;01/08/2019;Serie A;26.3;167830000
+Torino;01/08/2019;Serie A;25.2;163550000
+Genoa;01/08/2019;Serie A;26.7;142380000
+Sampdoria;01/08/2019;Serie A;25.7;135280000
+Bologna;01/08/2019;Serie A;25.0;129650000
+Parma;01/08/2019;Serie A;26.6;128750000
+Udinese;01/08/2019;Serie A;25.3;121080000
+Verona;01/08/2019;Serie A;25.4;112530000
+Brescia;01/08/2019;Serie A;26.4;83230000
+Spal;01/08/2019;Serie A;26.1;73630000
+Lecce;01/08/2019;Serie A;25.4;52330000
+Bayern Munich;01/08/2019;Bundesliga;24.2;777330000
+Dortmund;01/08/2019;Bundesliga;25.0;654050000
+RB Leipzig;01/08/2019;Bundesliga;23.4;570480000
+Leverkusen;01/08/2019;Bundesliga;25.7;398950000
+M'gladbach;01/08/2019;Bundesliga;26.3;254700000
+Hoffenheim;01/08/2019;Bundesliga;26.8;226050000
+Schalke 04;01/08/2019;Bundesliga;24.6;221580000
+Hertha;01/08/2019;Bundesliga;24.7;217200000
+Ein Frankfurt;01/08/2019;Bundesliga;27.0;208980000
+Wolfsburg;01/08/2019;Bundesliga;25.2;207600000
+Werder Bremen;01/08/2019;Bundesliga;26.6;135130000
+Freiburg;01/08/2019;Bundesliga;26.3;122650000
+Mainz;01/08/2019;Bundesliga;24.4;121580000
+Augsburg;01/08/2019;Bundesliga;26.0;112950000
+FC Koln;01/08/2019;Bundesliga;25.7;98480000
+Fortuna Dusseldorf;01/08/2019;Bundesliga;26.7;71780000
+Union Berlin;01/08/2019;Bundesliga;26.7;41200000
+Paderborn;01/08/2019;Bundesliga;25.9;28900000
+Barcelona;01/08/2019;Liga;24.7;930280000
+Real Madrid;01/08/2019;Liga;26.2;913750000
+Ath Madrid;01/08/2019;Liga;25.3;720150000
+Valencia;01/08/2019;Liga;25.9;427800000
+Sociedad;01/08/2019;Liga;25.0;347550000
+Sevilla;01/08/2019;Liga;26.2;294750000
+Betis;01/08/2019;Liga;25.5;244350000
+Ath Bilbao;01/08/2019;Liga;26.8;211750000
+Villarreal;01/08/2019;Liga;26.9;208680000
+Getafe;01/08/2019;Liga;28.5;175450000
+Celta;01/08/2019;Liga;25.5;167000000
+Espanol;01/08/2019;Liga;26.3;156050000
+Leganes;01/08/2019;Liga;25.8;109700000
+Alaves;01/08/2019;Liga;26.6;106750000
+Levante;01/08/2019;Liga;27.0;90500000
+Valladolid;01/08/2019;Liga;26.0;87780000
+Mallorca;01/08/2019;Liga;26.9;64680000
+Osasuna;01/08/2019;Liga;26.9;62780000
+Granada;01/08/2019;Liga;26.4;56580000
+Eibar;01/08/2019;Liga;28.8;53750000
+Man City;01/08/2019;Premier League;25.4;1050000000
+Liverpool;01/08/2019;Premier League;23.8;1000000000
+Tottenham;01/08/2019;Premier League;25.3;806800000
+Chelsea;01/08/2019;Premier League;24.7;705850000
+Man United;01/08/2019;Premier League;24.4;670450000
+Arsenal;01/08/2019;Premier League;24.8;607650000
+Everton;01/08/2019;Premier League;26.5;420550000
+Leicester;01/08/2019;Premier League;26.4;411100000
+Wolves;01/08/2019;Premier League;23.6;320330000
+West Ham;01/08/2019;Premier League;27.0;303600000
+Bournemouth;01/08/2019;Premier League;25.4;272180000
+Newcastle;01/08/2019;Premier League;26.6;252480000
+Aston Villa;01/08/2019;Premier League;26.2;231700000
+Southampton;01/08/2019;Premier League;25.0;210750000
+Brighton;01/08/2019;Premier League;25.3;200780000
+Watford;01/08/2019;Premier League;26.2;199600000
+Crystal Palace;01/08/2019;Premier League;27.4;189330000
+Burnley;01/08/2019;Premier League;26.8;163880000
+Norwich;01/08/2019;Premier League;26.0;145330000
+Sheffield United;01/08/2019;Premier League;27.9;138600000
 Paris SG;01/08/2019;Ligue1;25.8;874150000
 Lyon;01/08/2019;Ligue1;24.5;384550000
 Monaco;01/08/2019;Ligue1;25.7;331030000
@@ -19,6 +97,84 @@ Metz;01/08/2019;Ligue1;24.8;54100000
 Dijon;01/08/2019;Ligue1;25.9;50230000
 Nimes;01/08/2019;Ligue1;24.3;49650000
 Brest;01/08/2019;Ligue1;26.5;47780000
+Inter;01/08/2020;Serie A;25.7;663900000
+Juventus;01/08/2020;Serie A;25.2;633300000
+Milan;01/08/2020;Serie A;24.4;547780000
+Napoli;01/08/2020;Serie A;26.5;530200000
+Atalanta;01/08/2020;Serie A;25.5;430000000
+Roma;01/08/2020;Serie A;25.1;395650000
+Lazio;01/08/2020;Serie A;26.1;326330000
+Fiorentina;01/08/2020;Serie A;26.1;286800000
+Sassuolo;01/08/2020;Serie A;25.4;241740000
+Cagliari;01/08/2020;Serie A;25.8;187830000
+Torino;01/08/2020;Serie A;25.8;175280000
+Udinese;01/08/2020;Serie A;26.2;173000000
+Verona;01/08/2020;Serie A;24.7;157210000
+Bologna;01/08/2020;Serie A;24.6;153600000
+Parma;01/08/2020;Serie A;25.5;128700000
+Sampdoria;01/08/2020;Serie A;26.9;127180000
+Genoa;01/08/2020;Serie A;26.9;111930000
+Spezia;01/08/2020;Serie A;26.2;71680000
+Crotone;01/08/2020;Serie A;26.5;52750000
+Benevento;01/08/2020;Serie A;27.8;50130000
+Bayern Munich;01/08/2020;Bundesliga;24.4;858230000
+Dortmund;01/08/2020;Bundesliga;25.5;628400000
+RB Leipzig;01/08/2020;Bundesliga;24.1;574950000
+Leverkusen;01/08/2020;Bundesliga;25.6;373250000
+M'gladbach;01/08/2020;Bundesliga;26.2;300750000
+Ein Frankfurt;01/08/2020;Bundesliga;26.2;269150000
+Wolfsburg;01/08/2020;Bundesliga;26.4;256830000
+Hertha;01/08/2020;Bundesliga;24.9;228880000
+Hoffenheim;01/08/2020;Bundesliga;25.4;228150000
+Stuttgart;01/08/2020;Bundesliga;24.4;189250000
+Mainz;01/08/2020;Bundesliga;25.4;163300000
+Freiburg;01/08/2020;Bundesliga;25.7;139100000
+Schalke 04;01/08/2020;Bundesliga;25.3;123050000
+FC Koln;01/08/2020;Bundesliga;25.3;118200000
+Werder Bremen;01/08/2020;Bundesliga;25.7;111980000
+Augsburg;01/08/2020;Bundesliga;26.4;93050000
+Union Berlin;01/08/2020;Bundesliga;26.4;82050000
+Bielefeld;01/08/2020;Bundesliga;25.4;56730000
+Barcelona;01/08/2020;Liga;25.5;813500000
+Real Madrid;01/08/2020;Liga;25.3;787300000
+Ath Madrid;01/08/2020;Liga;25.4;773100000
+Sevilla;01/08/2020;Liga;26.2;418250000
+Sociedad;01/08/2020;Liga;25.1;406600000
+Villarreal;01/08/2020;Liga;26.4;292600000
+Valencia;01/08/2020;Liga;25.2;278850000
+Betis;01/08/2020;Liga;27.2;207700000
+Ath Bilbao;01/08/2020;Liga;26.4;204150000
+Getafe;01/08/2020;Liga;25.9;170100000
+Celta;01/08/2020;Liga;24.8;155850000
+Granada;01/08/2020;Liga;25.3;122650000
+Levante;01/08/2020;Liga;27.0;113000000
+Osasuna;01/08/2020;Liga;27.5;96750000
+Eibar;01/08/2020;Liga;27.5;83400000
+Alaves;01/08/2020;Liga;26.1;79800000
+Huesca;01/08/2020;Liga;26.9;64100000
+Valladolid;01/08/2020;Liga;27.1;63350000
+Cadiz;01/08/2020;Liga;27.6;47650000
+Elche;01/08/2020;Liga;27.2;45650000
+Man City;01/08/2020;Premier League;25.3;1040000000
+Liverpool;01/08/2020;Premier League;24.9;969650000
+Chelsea;01/08/2020;Premier League;25.7;889200000
+Man United;01/08/2020;Premier League;25.4;770050000
+Tottenham;01/08/2020;Premier League;25.2;703500000
+Arsenal;01/08/2020;Premier League;24.9;619250000
+Everton;01/08/2020;Premier League;25.2;511200000
+Leicester;01/08/2020;Premier League;25.8;510600000
+Wolves;01/08/2020;Premier League;24.4;450300000
+Aston Villa;01/08/2020;Premier League;23.9;430700000
+West Ham;01/08/2020;Premier League;26.8;336400000
+Brighton;01/08/2020;Premier League;24.9;290400000
+Southampton;01/08/2020;Premier League;25.0;282800000
+Newcastle;01/08/2020;Premier League;27.4;255350000
+Fulham;01/08/2020;Premier League;27.0;239750000
+Leeds;01/08/2020;Premier League;25.1;238100000
+Crystal Palace;01/08/2020;Premier League;28.2;193850000
+Sheffield United;01/08/2020;Premier League;25.4;149850000
+West Brom;01/08/2020;Premier League;26.6;141150000
+Burnley;01/08/2020;Premier League;27.1;132300000
 Paris SG;01/08/2020;Ligue1;24.7;805000000
 Lyon;01/08/2020;Ligue1;24.7;431350000
 Monaco;01/08/2020;Ligue1;24.4;370350000
@@ -39,6 +195,84 @@ Nantes;01/08/2020;Ligue1;25.9;94750000
 Lorient;01/08/2020;Ligue1;26.8;72880000
 Dijon;01/08/2020;Ligue1;24.9;65630000
 Nimes;01/08/2020;Ligue1;25.3;60400000
+Juventus;01/08/2021;Serie A;25.5;642500000
+Inter;01/08/2021;Serie A;27.7;558550000
+Milan;01/08/2021;Serie A;25.8;546950000
+Napoli;01/08/2021;Serie A;25.8;477230000
+Atalanta;01/08/2021;Serie A;24.9;398750000
+Roma;01/08/2021;Serie A;24.3;381250000
+Fiorentina;01/08/2021;Serie A;25.9;325800000
+Lazio;01/08/2021;Serie A;27.5;264530000
+Sassuolo;01/08/2021;Serie A;25.5;251000000
+Torino;01/08/2021;Serie A;25.3;223400000
+Bologna;01/08/2021;Serie A;24.2;186200000
+Verona;01/08/2021;Serie A;25.2;162980000
+Udinese;01/08/2021;Serie A;25.4;142300000
+Cagliari;01/08/2021;Serie A;25.5;134530000
+Sampdoria;01/08/2021;Serie A;26.7;128550000
+Empoli;01/08/2021;Serie A;25.0;126500000
+Genoa;01/08/2021;Serie A;26.5;121280000
+Venezia;01/08/2021;Serie A;25.2;80980000
+Spezia;01/08/2021;Serie A;24.1;78500000
+Salernitana;01/08/2021;Serie A;26.3;70560000
+Bayern Munich;01/08/2021;Bundesliga;25.2;790330000
+Dortmund;01/08/2021;Bundesliga;24.5;558980000
+RB Leipzig;01/08/2021;Bundesliga;24.3;498950000
+Leverkusen;01/08/2021;Bundesliga;25.1;455050000
+Wolfsburg;01/08/2021;Bundesliga;25.7;269300000
+M'gladbach;01/08/2021;Bundesliga;25.8;236800000
+Ein Frankfurt;01/08/2021;Bundesliga;25.7;228750000
+Hoffenheim;01/08/2021;Bundesliga;25.3;211430000
+Freiburg;01/08/2021;Bundesliga;25.5;176350000
+Stuttgart;01/08/2021;Bundesliga;24.0;174230000
+Hertha;01/08/2021;Bundesliga;25.2;155780000
+Mainz;01/08/2021;Bundesliga;25.5;131030000
+Union Berlin;01/08/2021;Bundesliga;27.1;115900000
+FC Koln;01/08/2021;Bundesliga;25.8;99280000
+Augsburg;01/08/2021;Bundesliga;26.0;95300000
+Bielefeld;01/08/2021;Bundesliga;25.1;65850000
+Bochum;01/08/2021;Bundesliga;27.7;52250000
+Greuther Furth;01/08/2021;Bundesliga;25.1;36950000
+Real Madrid;01/08/2021;Liga;26.3;770750000
+Barcelona;01/08/2021;Liga;25.5;735600000
+Ath Madrid;01/08/2021;Liga;25.7;661800000
+Villarreal;01/08/2021;Liga;26.5;408900000
+Sevilla;01/08/2021;Liga;26.2;385000000
+Sociedad;01/08/2021;Liga;25.2;376950000
+Valencia;01/08/2021;Liga;24.1;310600000
+Betis;01/08/2021;Liga;27.9;259000000
+Ath Bilbao;01/08/2021;Liga;26.2;226050000
+Getafe;01/08/2021;Liga;25.7;208680000
+Espanol;01/08/2021;Liga;25.9;131600000
+Celta;01/08/2021;Liga;26.0;120000000
+Osasuna;01/08/2021;Liga;27.4;108450000
+Granada;01/08/2021;Liga;26.9;103750000
+Levante;01/08/2021;Liga;26.8;77900000
+Mallorca;01/08/2021;Liga;26.2;74150000
+Elche;01/08/2021;Liga;27.9;72980000
+Cadiz;01/08/2021;Liga;27.7;67800000
+Vallecano;01/08/2021;Liga;26.7;67200000
+Alaves;01/08/2021;Liga;25.6;65350000
+Man City;01/08/2021;Premier League;24.7;1000000000
+Liverpool;01/08/2021;Premier League;24.5;918900000
+Chelsea;01/08/2021;Premier League;25.6;914500000
+Man United;01/08/2021;Premier League;26.0;769150000
+Tottenham;01/08/2021;Premier League;24.0;689350000
+Arsenal;01/08/2021;Premier League;24.0;613050000
+Leicester;01/08/2021;Premier League;25.7;526550000
+Aston Villa;01/08/2021;Premier League;24.8;487750000
+Everton;01/08/2021;Premier League;26.0;479050000
+Wolves;01/08/2021;Premier League;24.8;376950000
+West Ham;01/08/2021;Premier League;26.3;354900000
+Brighton;01/08/2021;Premier League;24.6;318000000
+Newcastle;01/08/2021;Premier League;27.9;313900000
+Leeds;01/08/2021;Premier League;24.0;299450000
+Southampton;01/08/2021;Premier League;25.6;274300000
+Brentford;01/08/2021;Premier League;24.7;273300000
+Crystal Palace;01/08/2021;Premier League;26.5;271050000
+Norwich;01/08/2021;Premier League;24.7;163200000
+Watford;01/08/2021;Premier League;26.4;156200000
+Burnley;01/08/2021;Premier League;27.9;137850000
 Paris SG;01/08/2021;Ligue1;26.2;875150000
 Lyon;01/08/2021;Ligue1;24.9;397700000
 Monaco;01/08/2021;Ligue1;23.7;396000000
@@ -59,6 +293,84 @@ Angers;01/08/2021;Ligue1;25.8;89500000
 Troyes;01/08/2021;Ligue1;25.1;73200000
 Lorient;01/08/2021;Ligue1;25.8;61300000
 Clermont;01/08/2021;Ligue1;25.5;55100000
+Napoli;01/08/2022;Serie A;26.7;654080000
+Inter;01/08/2022;Serie A;26.9;567550000
+Milan;01/08/2022;Serie A;26.4;545100000
+Juventus;01/08/2022;Serie A;25.9;483130000
+Roma;01/08/2022;Serie A;24.2;361380000
+Atalanta;01/08/2022;Serie A;24.9;338380000
+Lazio;01/08/2022;Serie A;26.5;266430000
+Fiorentina;01/08/2022;Serie A;25.6;258800000
+Sassuolo;01/08/2022;Serie A;25.4;232200000
+Torino;01/08/2022;Serie A;24.3;197190000
+Udinese;01/08/2022;Serie A;25.3;188860000
+Bologna;01/08/2022;Serie A;25.3;153630000
+Monza;01/08/2022;Serie A;26.6;135700000
+Empoli;01/08/2022;Serie A;24.8;125530000
+Verona;01/08/2022;Serie A;25.2;123890000
+Salernitana;01/08/2022;Serie A;26.9;118350000
+Spezia;01/08/2022;Serie A;24.9;115810000
+Lecce;01/08/2022;Serie A;25.1;105200000
+Cremonese;01/08/2022;Serie A;26.2;83780000
+Sampdoria;01/08/2022;Serie A;26.4;82960000
+Bayern Munich;01/08/2022;Bundesliga;25.7;948950000
+Dortmund;01/08/2022;Bundesliga;25.1;567550000
+RB Leipzig;01/08/2022;Bundesliga;26.0;486400000
+Leverkusen;01/08/2022;Bundesliga;24.8;452500000
+Ein Frankfurt;01/08/2022;Bundesliga;25.6;324550000
+M'gladbach;01/08/2022;Bundesliga;25.9;241680000
+Wolfsburg;01/08/2022;Bundesliga;25.1;238300000
+Freiburg;01/08/2022;Bundesliga;26.5;200950000
+Hoffenheim;01/08/2022;Bundesliga;26.2;178800000
+Union Berlin;01/08/2022;Bundesliga;27.4;157950000
+Stuttgart;01/08/2022;Bundesliga;23.7;151050000
+Mainz;01/08/2022;Bundesliga;25.2;135900000
+Augsburg;01/08/2022;Bundesliga;25.6;132230000
+FC Koln;01/08/2022;Bundesliga;25.4;115650000
+Hertha;01/08/2022;Bundesliga;25.8;94000000
+Werder Bremen;01/08/2022;Bundesliga;25.2;89500000
+Schalke 04;01/08/2022;Bundesliga;26.9;87780000
+Bochum;01/08/2022;Bundesliga;28.3;53700000
+Real Madrid;01/08/2022;Liga;25.9;923450000
+Barcelona;01/08/2022;Liga;24.4;836800000
+Ath Madrid;01/08/2022;Liga;25.8;534300000
+Sociedad;01/08/2022;Liga;25.0;441700000
+Villarreal;01/08/2022;Liga;26.4;363500000
+Valencia;01/08/2022;Liga;24.5;249780000
+Betis;01/08/2022;Liga;27.6;246400000
+Sevilla;01/08/2022;Liga;26.8;232580000
+Ath Bilbao;01/08/2022;Liga;27.1;222450000
+Osasuna;01/08/2022;Liga;27.2;150050000
+Girona;01/08/2022;Liga;25.7;139900000
+Celta;01/08/2022;Liga;25.7;138800000
+Getafe;01/08/2022;Liga;26.5;118900000
+Espanol;01/08/2022;Liga;25.9;116500000
+Almeria;01/08/2022;Liga;25.9;114200000
+Mallorca;01/08/2022;Liga;26.9;107000000
+Vallecano;01/08/2022;Liga;28.7;103400000
+Valladolid;01/08/2022;Liga;26.8;90750000
+Elche;01/08/2022;Liga;27.0;67500000
+Cadiz;01/08/2022;Liga;27.3;65600000
+Man City;01/08/2022;Premier League;26.0;1150000000
+Arsenal;01/08/2022;Premier League;24.0;1000000000
+Chelsea;01/08/2022;Premier League;25.2;994950000
+Man United;01/08/2022;Premier League;25.4;847750000
+Liverpool;01/08/2022;Premier League;25.6;811850000
+Tottenham;01/08/2022;Premier League;25.9;649100000
+Newcastle;01/08/2022;Premier League;28.3;541600000
+Brighton;01/08/2022;Premier League;24.1;529800000
+Aston Villa;01/08/2022;Premier League;25.4;509550000
+Wolves;01/08/2022;Premier League;25.8;497650000
+Leicester;01/08/2022;Premier League;26.4;490700000
+West Ham;01/08/2022;Premier League;25.4;465600000
+Southampton;01/08/2022;Premier League;24.8;419950000
+Everton;01/08/2022;Premier League;26.9;413150000
+Nott'm Forest;01/08/2022;Premier League;26.6;376250000
+Brentford;01/08/2022;Premier League;25.3;371200000
+Leeds;01/08/2022;Premier League;24.0;345150000
+Crystal Palace;01/08/2022;Premier League;25.4;323050000
+Fulham;01/08/2022;Premier League;25.9;295100000
+Bournemouth;01/08/2022;Premier League;25.0;287200000
 Paris SG;01/08/2022;Ligue1;25.9;891100000
 Rennes;01/08/2022;Ligue1;24.3;387750000
 Monaco;01/08/2022;Ligue1;24.3;368300000
@@ -79,6 +391,84 @@ Angers;01/08/2022;Ligue1;25.1;71800000
 Auxerre;01/08/2022;Ligue1;26.5;54800000
 Clermont;01/08/2022;Ligue1;26.3;48000000
 Ajaccio;01/08/2022;Ligue1;27.1;27000000
+Inter;01/08/2023;Serie A;27.1;654850000
+Milan;01/08/2023;Serie A;24.6;571410000
+Napoli;01/08/2023;Serie A;26.5;515000000
+Juventus;01/08/2023;Serie A;25.2;504530000
+Atalanta;01/08/2023;Serie A;25.2;436050000
+Bologna;01/08/2023;Serie A;25.1;349300000
+Roma;01/08/2023;Serie A;25.2;340400000
+Fiorentina;01/08/2023;Serie A;25.7;284100000
+Torino;01/08/2023;Serie A;24.3;232730000
+Lazio;01/08/2023;Serie A;26.4;225450000
+Genoa;01/08/2023;Serie A;25.9;195400000
+Udinese;01/08/2023;Serie A;24.7;170060000
+Monza;01/08/2023;Serie A;26.6;143430000
+Verona;01/08/2023;Serie A;25.1;140700000
+Sassuolo;01/08/2023;Serie A;25.5;139540000
+Frosinone;01/08/2023;Serie A;24.9;108400000
+Lecce;01/08/2023;Serie A;24.6;107730000
+Empoli;01/08/2023;Serie A;25.3;102330000
+Salernitana;01/08/2023;Serie A;25.6;94600000
+Cagliari;01/08/2023;Serie A;27.0;92230000
+Bayern Munich;01/08/2023;Bundesliga;25.2;965150000
+Leverkusen;01/08/2023;Bundesliga;24.9;658350000
+RB Leipzig;01/08/2023;Bundesliga;25.2;545400000
+Dortmund;01/08/2023;Bundesliga;25.6;494800000
+Stuttgart;01/08/2023;Bundesliga;24.4;346630000
+Ein Frankfurt;01/08/2023;Bundesliga;24.7;326650000
+Wolfsburg;01/08/2023;Bundesliga;25.0;206450000
+Freiburg;01/08/2023;Bundesliga;26.3;180350000
+Hoffenheim;01/08/2023;Bundesliga;26.1;176000000
+M'gladbach;01/08/2023;Bundesliga;26.0;165230000
+Union Berlin;01/08/2023;Bundesliga;27.5;160950000
+Mainz;01/08/2023;Bundesliga;26.5;142880000
+Augsburg;01/08/2023;Bundesliga;25.6;140800000
+Werder Bremen;01/08/2023;Bundesliga;26.4;134930000
+FC Koln;01/08/2023;Bundesliga;26.1;81450000
+Heidenheim;01/08/2023;Bundesliga;26.8;66450000
+Bochum;01/08/2023;Bundesliga;28.3;64530000
+Darmstadt;01/08/2023;Bundesliga;27.0;38700000
+Real Madrid;01/08/2023;Liga;25.6;1140000000
+Barcelona;01/08/2023;Liga;24.0;916200000
+Sociedad;01/08/2023;Liga;25.2;498500000
+Ath Madrid;01/08/2023;Liga;26.9;458450000
+Girona;01/08/2023;Liga;25.6;297900000
+Ath Bilbao;01/08/2023;Liga;27.0;295650000
+Villarreal;01/08/2023;Liga;27.2;252500000
+Valencia;01/08/2023;Liga;23.8;244730000
+Sevilla;01/08/2023;Liga;26.7;228750000
+Betis;01/08/2023;Liga;27.0;224880000
+Celta;01/08/2023;Liga;25.9;149300000
+Granada;01/08/2023;Liga;26.4;141100000
+Getafe;01/08/2023;Liga;25.7;133000000
+Alaves;01/08/2023;Liga;24.5;123700000
+Las Palmas;01/08/2023;Liga;26.2;112400000
+Osasuna;01/08/2023;Liga;27.2;105350000
+Almeria;01/08/2023;Liga;25.3;99400000
+Mallorca;01/08/2023;Liga;26.9;87700000
+Vallecano;01/08/2023;Liga;28.9;63950000
+Cadiz;01/08/2023;Liga;27.0;60700000
+Man City;01/08/2023;Premier League;25.7;1460000000
+Arsenal;01/08/2023;Premier League;24.6;1200000000
+Chelsea;01/08/2023;Premier League;22.2;1010000000
+Liverpool;01/08/2023;Premier League;24.2;955650000
+Tottenham;01/08/2023;Premier League;25.6;838500000
+Man United;01/08/2023;Premier League;24.9;808350000
+Aston Villa;01/08/2023;Premier League;25.0;709650000
+Newcastle;01/08/2023;Premier League;26.3;652250000
+Brighton;01/08/2023;Premier League;24.2;524400000
+Nott'm Forest;01/08/2023;Premier League;26.6;501350000
+West Ham;01/08/2023;Premier League;26.6;487500000
+Crystal Palace;01/08/2023;Premier League;25.1;446580000
+Wolves;01/08/2023;Premier League;23.9;442730000
+Brentford;01/08/2023;Premier League;25.0;428780000
+Bournemouth;01/08/2023;Premier League;25.7;401750000
+Everton;01/08/2023;Premier League;26.8;391750000
+Fulham;01/08/2023;Premier League;26.9;384350000
+Burnley;01/08/2023;Premier League;25.3;273480000
+Sheffield United;01/08/2023;Premier League;24.7;152350000
+Luton;01/08/2023;Premier League;25.7;140900000
 Paris SG;01/08/2023;Ligue1;24.9;1020000000
 Monaco;01/08/2023;Ligue1;24.0;398550000
 Rennes;01/08/2023;Ligue1;24.8;375350000
@@ -97,6 +487,84 @@ Brest;01/08/2023;Ligue1;25.9;115150000
 Le Havre;01/08/2023;Ligue1;25.1;72500000
 Metz;01/08/2023;Ligue1;25.5;65400000
 Clermont;01/08/2023;Ligue1;25.2;61350000
+Inter;01/08/2024;Serie A;25.5;741850000
+Juventus;01/08/2024;Serie A;24.6;628730000
+Milan;01/08/2024;Serie A;25.1;581700000
+Atalanta;01/08/2024;Serie A;25.4;501200000
+Napoli;01/08/2024;Serie A;26.9;500450000
+Roma;01/08/2024;Serie A;25.7;390300000
+Fiorentina;01/08/2024;Serie A;25.2;368130000
+Bologna;01/08/2024;Serie A;25.2;340650000
+Lazio;01/08/2024;Serie A;26.0;294900000
+Torino;01/08/2024;Serie A;24.9;219280000
+Como;01/08/2024;Serie A;26.5;203430000
+Udinese;01/08/2024;Serie A;25.7;198900000
+Genoa;01/08/2024;Serie A;24.9;175350000
+Parma;01/08/2024;Serie A;25.1;175110000
+Lecce;01/08/2024;Serie A;24.8;113430000
+Verona;01/08/2024;Serie A;25.2;107350000
+Empoli;01/08/2024;Serie A;24.5;106580000
+Monza;01/08/2024;Serie A;26.3;95830000
+Venezia;01/08/2024;Serie A;25.9;95600000
+Cagliari;01/08/2024;Serie A;26.7;93630000
+Bayern Munich;01/08/2024;Bundesliga;24.6;953550000
+Leverkusen;01/08/2024;Bundesliga;25.1;623350000
+RB Leipzig;01/08/2024;Bundesliga;23.9;513700000
+Dortmund;01/08/2024;Bundesliga;24.1;508280000
+Ein Frankfurt;01/08/2024;Bundesliga;24.6;431250000
+Stuttgart;01/08/2024;Bundesliga;24.2;365230000
+Wolfsburg;01/08/2024;Bundesliga;25.5;296300000
+M'gladbach;01/08/2024;Bundesliga;25.7;187500000
+Hoffenheim;01/08/2024;Bundesliga;25.1;187100000
+Freiburg;01/08/2024;Bundesliga;27.2;186200000
+Mainz;01/08/2024;Bundesliga;27.2;175130000
+Augsburg;01/08/2024;Bundesliga;26.0;158880000
+Union Berlin;01/08/2024;Bundesliga;27.9;136050000
+Werder Bremen;01/08/2024;Bundesliga;25.9;132000000
+Heidenheim;01/08/2024;Bundesliga;27.2;72530000
+St Pauli;01/08/2024;Bundesliga;26.5;65780000
+Bochum;01/08/2024;Bundesliga;27.0;57100000
+Holstein Kiel;01/08/2024;Bundesliga;26.6;47130000
+Real Madrid;01/08/2024;Liga;24.4;1350000000
+Barcelona;01/08/2024;Liga;23.3;1080000000
+Ath Madrid;01/08/2024;Liga;26.5;542500000
+Ath Bilbao;01/08/2024;Liga;26.1;375350000
+Sociedad;01/08/2024;Liga;24.6;345050000
+Betis;01/08/2024;Liga;26.0;291700000
+Villarreal;01/08/2024;Liga;26.2;264250000
+Valencia;01/08/2024;Liga;24.5;215550000
+Sevilla;01/08/2024;Liga;25.2;183900000
+Girona;01/08/2024;Liga;25.1;153100000
+Celta;01/08/2024;Liga;26.3;130900000
+Las Palmas;01/08/2024;Liga;25.4;117300000
+Espanol;01/08/2024;Liga;25.6;116980000
+Osasuna;01/08/2024;Liga;26.7;113280000
+Alaves;01/08/2024;Liga;25.8;92350000
+Getafe;01/08/2024;Liga;25.4;87700000
+Mallorca;01/08/2024;Liga;27.6;84880000
+Valladolid;01/08/2024;Liga;25.4;81450000
+Vallecano;01/08/2024;Liga;28.3;68000000
+Leganes;01/08/2024;Liga;26.1;47980000
+Man City;01/08/2024;Premier League;25.6;1360000000
+Chelsea;01/08/2024;Premier League;22.4;1190000000
+Arsenal;01/08/2024;Premier League;24.5;1160000000
+Liverpool;01/08/2024;Premier League;24.7;950950000
+Man United;01/08/2024;Premier League;24.0;825000000
+Tottenham;01/08/2024;Premier League;24.0;777300000
+Aston Villa;01/08/2024;Premier League;25.2;680550000
+Newcastle;01/08/2024;Premier League;27.5;677530000
+Brighton;01/08/2024;Premier League;24.2;667580000
+Crystal Palace;01/08/2024;Premier League;26.2;526850000
+Bournemouth;01/08/2024;Premier League;24.7;518600000
+Nott'm Forest;01/08/2024;Premier League;26.8;481300000
+Wolves;01/08/2024;Premier League;25.3;433050000
+Brentford;01/08/2024;Premier League;24.4;427850000
+West Ham;01/08/2024;Premier League;28.0;400700000
+Everton;01/08/2024;Premier League;25.8;363230000
+Fulham;01/08/2024;Premier League;27.7;362350000
+Southampton;01/08/2024;Premier League;25.3;310050000
+Ipswich;01/08/2024;Premier League;26.6;270100000
+Leicester;01/08/2024;Premier League;25.3;253350000
 Paris SG;01/08/2024;Ligue1;23.6;1140000000
 Monaco;01/08/2024;Ligue1;23.6;411150000
 Marseille;01/08/2024;Ligue1;24.9;358000000
@@ -115,6 +583,84 @@ St Etienne;01/08/2024;Ligue1;25.3;81600000
 Le Havre;01/08/2024;Ligue1;25.1;70550000
 Montpellier;01/08/2024;Ligue1;25.2;65850000
 Angers;01/08/2024;Ligue1;25.8;51650000
+Inter;01/08/2025;Serie A;26.3;680100000
+Juventus;01/08/2025;Serie A;26.0;536500000
+Milan;01/08/2025;Serie A;25.1;511700000
+Roma;01/08/2025;Serie A;24.5;503300000
+Atalanta;01/08/2025;Serie A;25.7;491850000
+Napoli;01/08/2025;Serie A;26.7;459550000
+Como;01/08/2025;Serie A;25.4;412950000
+Bologna;01/08/2025;Serie A;25.7;301500000
+Lazio;01/08/2025;Serie A;26.6;288130000
+Fiorentina;01/08/2025;Serie A;25.1;264950000
+Sassuolo;01/08/2025;Serie A;25.1;211800000
+Udinese;01/08/2025;Serie A;25.0;206100000
+Parma;01/08/2025;Serie A;23.9;204050000
+Cagliari;01/08/2025;Serie A;24.7;201850000
+Genoa;01/08/2025;Serie A;24.3;187400000
+Torino;01/08/2025;Serie A;25.6;150950000
+Lecce;01/08/2025;Serie A;25.0;128580000
+Pisa;01/08/2025;Serie A;24.9;111550000
+Verona;01/08/2025;Serie A;24.4;107750000
+Cremonese;01/08/2025;Serie A;27.2;78380000
+Bayern Munich;01/08/2025;Bundesliga;24.0;994400000
+RB Leipzig;01/08/2025;Bundesliga;24.6;618700000
+Leverkusen;01/08/2025;Bundesliga;24.5;548350000
+Dortmund;01/08/2025;Bundesliga;25.2;520400000
+Stuttgart;01/08/2025;Bundesliga;24.4;464550000
+Ein Frankfurt;01/08/2025;Bundesliga;25.2;408950000
+Hoffenheim;01/08/2025;Bundesliga;25.0;285800000
+Freiburg;01/08/2025;Bundesliga;27.3;264850000
+Wolfsburg;01/08/2025;Bundesliga;24.9;234100000
+Hamburg;01/08/2025;Bundesliga;25.3;186050000
+Augsburg;01/08/2025;Bundesliga;25.7;180650000
+Werder Bremen;01/08/2025;Bundesliga;25.3;177830000
+M'gladbach;01/08/2025;Bundesliga;25.7;171400000
+Mainz;01/08/2025;Bundesliga;26.5;165350000
+FC Koln;01/08/2025;Bundesliga;25.6;156650000
+Union Berlin;01/08/2025;Bundesliga;26.2;129850000
+Heidenheim;01/08/2025;Bundesliga;26.6;78750000
+St Pauli;01/08/2025;Bundesliga;26.3;65650000
+Real Madrid;01/08/2025;Liga;25.5;1450000000
+Barcelona;01/08/2025;Liga;23.9;1300000000
+Ath Madrid;01/08/2025;Liga;27.5;664300000
+Villarreal;01/08/2025;Liga;25.4;328700000
+Sociedad;01/08/2025;Liga;25.6;252300000
+Ath Bilbao;01/08/2025;Liga;26.6;249700000
+Betis;01/08/2025;Liga;27.5;234600000
+Celta;01/08/2025;Liga;27.4;165100000
+Sevilla;01/08/2025;Liga;26.7;146900000
+Valencia;01/08/2025;Liga;27.7;120200000
+Espanol;01/08/2025;Liga;26.5;113000000
+Vallecano;01/08/2025;Liga;28.5;87700000
+Levante;01/08/2025;Liga;25.1;84150000
+La Corogne;01/08/2025;Liga;25.7;79950000
+Osasuna;01/08/2025;Liga;28.0;71000000
+Getafe;01/08/2025;Liga;27.1;70500000
+Alaves;01/08/2025;Liga;27.0;67700000
+Elche;01/08/2025;Liga;26.3;62600000
+Santander;01/08/2025;Liga;25.3;72100000
+Malaga;01/08/2025;Liga;25.4;38630000
+Man City;01/08/2025;Premier League;25.2;1390000000
+Arsenal;01/08/2025;Premier League;23.9;1330000000
+Chelsea;01/08/2025;Premier League;22.4;1150000000
+Liverpool;01/08/2025;Premier League;24.0;980500000
+Tottenham;01/08/2025;Premier League;24.0;813400000
+Man United;01/08/2025;Premier League;24.9;774600000
+Crystal Palace;01/08/2025;Premier League;25.2;702500000
+Newcastle;01/08/2025;Premier League;26.6;697700000
+Bournemouth;01/08/2025;Premier League;25.0;680980000
+Nott'm Forest;01/08/2025;Premier League;25.5;638680000
+Brighton;01/08/2025;Premier League;25.3;625000000
+Aston Villa;01/08/2025;Premier League;25.1;613980000
+Brentford;01/08/2025;Premier League;24.4;503580000
+West Ham;01/08/2025;Premier League;26.6;469730000
+Everton;01/08/2025;Premier League;25.6;459250000
+Sunderland;01/08/2025;Premier League;24.6;446680000
+Wolves;01/08/2025;Premier League;25.0;389850000
+Fulham;01/08/2025;Premier League;27.4;376200000
+Leeds;01/08/2025;Premier League;26.1;374200000
+Burnley;01/08/2025;Premier League;25.8;236000000
 Paris SG;01/08/2025;Ligue1;22.4;1380000000
 Marseille;01/08/2025;Ligue1;25.3;484800000
 Strasbourg;01/08/2025;Ligue1;22.0;466080000
