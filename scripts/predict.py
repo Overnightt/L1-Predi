@@ -19,7 +19,6 @@ AWAY_TEAM = input("Away Team:")
 matches = check_data("../data/seasons-19-26.csv")
 squad_values = check_data("../data/teams-19-26.csv", date_column="SeasonStart")
 
-# No train/val split at prediction time, so we compute norm_stats on all available matches
 stats = norm_stats(matches, squad_values)
 
 model = FC_Predictor(N_FEATURES, STATIC_SIZE)
