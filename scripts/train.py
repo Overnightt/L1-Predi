@@ -6,7 +6,7 @@ from model import FC_Predictor
 from dataset_builder import build_dataset
 from normalisation_stats import norm_stats
 
-torch.manual_seed(42)
+torch.manual_seed(96)
 
 #This is where we train the model
 
@@ -16,7 +16,7 @@ static_size=5
 model = FC_Predictor(n_features,static_size)
 
 loss_function = nn.CrossEntropyLoss()
-optimizer = optim.Adam(model.parameters(),lr=0.007) # MODIFY learning rate here
+optimizer = optim.Adam(model.parameters(),lr=0.012) # MODIFY learning rate here
 
 matches=check_data("../data/seasons-19-26.csv")
 squad_values = check_data("../data/teams-19-26.csv", date_column="SeasonStart")
