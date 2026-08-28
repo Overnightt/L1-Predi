@@ -1,7 +1,5 @@
 # L1-Predi 
 
-> **Work in progress**: this project is currently undergoing major changes (multi-league support, new features, architecture updates) and is **not usable in its current state**. Expect broken scripts and outdated instructions until this notice is removed.
-
 A neural network-based predictor for football match outcomes, originally built for Ligue 1 and now being extended to the five major European leagues. This project uses historical match data to predict the probability of home wins, draws, and away wins.
 
 ## About the Model
